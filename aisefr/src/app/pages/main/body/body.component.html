@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="body-title">
+    <h3>
+      В нашем интернет-магазине вы <br> найдете все необходимое, чтобы <br> создать
+      идеальный оазис уюта в вашей спальне.
+    </h3>
+  </div>
+  <div class="body-category">
+    <div *ngFor="let bodyContent of bodyContentArray" class="body-content">
+        <div class="body-content-title">
+            {{bodyContent.title}}
+        </div>
+        <div class="body-content-desc">
+            {{bodyContent.desc}}
+        </div>
+        <div class="body-content-btn">
+            <button type="button" routerLink="{{bodyContent.router}}">Подробнее</button>
+        </div>
+    </div>
+  </div>
+</div>

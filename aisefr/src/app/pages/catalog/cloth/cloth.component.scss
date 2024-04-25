@@ -1,0 +1,48 @@
+.container{
+  margin-bottom: 65px;
+
+  .emag-items{
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-end;
+    .img1{
+      width: 800px;
+      height: 800px;
+      margin-right: 100px;
+    }
+    .text1{
+      font-weight: 300;
+      font-size: 40px;
+      color: #000000;
+      margin: auto;
+      text-align: center;
+    }
+    cursor: pointer;
+  }
+
+  .emag-items1{
+    margin-top: 100px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    .img2{
+      width: 800px;
+      height: 800px;
+      margin-left: 100px;
+    }
+    .text2 {
+      font-weight: 300;
+      font-size: 40px;
+      margin: auto;
+      text-align: center;
+      color: #000000;
+    }
+    cursor: pointer;
+  }
+  .emag-items:hover{
+    filter: brightness(90%);
+  }
+  .emag-items1:hover{
+    filter: brightness(90%);
+  }
+}

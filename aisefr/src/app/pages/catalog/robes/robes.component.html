@@ -1,0 +1,18 @@
+<app-header></app-header>
+<div class="container">
+  <div class="category">
+    <div *ngFor="let category of categories" (click)="getProductsByCategory(category.id)">
+      {{category.name}}
+    </div>
+  </div>
+  <div class="list-items">
+    <div class="item" *ngFor="let product of products" [routerLink]="['/catalog/product', product.id]">
+      <img [src]="getPhoto(product)" class="img">
+      <div class="text">
+        <p>{{ product.name }}</p>
+        <p>{{ product.price }} ₸</p>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

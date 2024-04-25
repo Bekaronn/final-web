@@ -1,0 +1,31 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  text-align: center;
+}
+
+button {
+  color: #3373af;
+  border: 1px solid #3373af;
+  background-color: white;
+  font-size: 16px;
+  padding: 11px 20px;
+  margin-top: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+button:hover {
+  filter: brightness(90%);
+}

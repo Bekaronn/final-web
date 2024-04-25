@@ -1,0 +1,130 @@
+.container {
+  .home{
+    position: absolute;
+    left: 30px;
+    top: 30px;
+    color: #3373AF;
+    text-decoration: none;
+    a{
+      color: #3373AF;
+      text-decoration: none;
+    }
+  }
+
+  margin: 80px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  h1 {
+    font-family: 'Comfortaa';
+    font-weight: 600;
+    font-size: 100px;
+    color: #3373AF;
+    margin-top: 40px;
+  }
+
+  h2 {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 23px;
+    text-align: center;
+    color: #3373AF;
+  }
+
+  .login {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    box-sizing: border-box;
+    width: 500px;
+    height: 350px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+
+    p {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 33px;
+      text-align: center;
+      color: #000000;
+      margin-top: 30px;
+    }
+    .form-group{
+      display: flex;
+      width: 360px;
+      margin: 0 auto;
+      justify-content: space-between;
+    }
+    #firstName{
+      box-sizing: border-box;
+      width: 170px;
+      margin-top: 15px;
+      height: 35px;
+
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #firstName::placeholder{
+      padding-left: 10px;
+    }
+
+    #lastName{
+      box-sizing: border-box;
+      width: 170px;
+      margin-top: 15px;
+      height: 35px;
+
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #lastName::placeholder{
+      padding-left: 10px;
+    }
+
+    #email{
+      box-sizing: border-box;
+      width: 360px;
+      margin-top: 15px;
+      height: 35px;
+
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #email::placeholder{
+      padding-left: 10px;
+    }
+    #password{
+      box-sizing: border-box;
+      width: 360px;
+      height: 35px;
+      margin-top: 15px;
+      background: #FFFFFF;
+      border: 1px solid rgba(0, 0, 0, 0.5);
+    }
+    #password::placeholder{
+      padding-left: 10px;
+    }
+    button{
+      width: 150px;
+      height: 40px;
+      margin-top: 15px;
+      margin: 20px auto;
+      background: #3373AF;
+      border-radius: 6px;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #FFFFFF;
+    }
+    a{
+      font-weight: 400;
+      font-size: 15px;
+      color: #3373AF;
+    }
+  }
+}

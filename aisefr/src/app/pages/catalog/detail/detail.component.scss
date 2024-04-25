@@ -1,0 +1,122 @@
+.container {
+  font-family: 'Montserrat';
+  padding: 30px 80px 150px 80px;
+
+  h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 62px;
+    letter-spacing: -0.015em;
+    color: #3373AF;
+  }
+  .photo {
+    height: 70vh;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .content {
+    display: flex;
+    margin-top: 30px;
+    .sub-info{
+      .review {
+        margin-top: 3px;
+        font-size: 20px;
+      }
+      .title{
+        font-weight: 600;
+        font-size: 30px;
+        color: #3373AF;
+      }
+    }
+    .info {
+      display: flex;
+      padding-left: 30px;
+      flex-direction: column;
+      justify-content: space-between;
+      .gallery {
+        margin-top: 20px;
+        display: flex;
+        .photos{
+          height: 14vh;
+          cursor: pointer;
+        }
+      }
+      .description{
+        font-weight: 300;
+        font-size: 16px;
+        color: #3373AF;
+        margin-top: 10px;
+      }
+    }
+
+    .buttons{
+      margin-bottom: 5px;
+      display: flex;
+      justify-content: space-between;
+      .choose{
+        display: flex;
+        button{
+          box-sizing: border-box;
+          width: 35px;
+          height: 35px;
+          background: #FFFFFF;
+          border: 1px solid #3373AF;
+          font-weight: 600;
+          text-align: center;
+          color: #3373AF;
+          cursor: pointer;
+        }
+        button:hover{
+          filter: brightness(90%);
+        }
+        p{
+          box-sizing: border-box;
+          width: 35px;
+          height: 35px;
+          background: #FFFFFF;
+          border: 1px solid #3373AF;
+          font-size: 16px;
+          text-align: center;
+          padding-top: 8px;
+          color: #3373AF;
+        }
+      }
+      .order{
+        display: flex;
+        .price {
+          padding-top: 10px;
+          padding-right: 20px;
+        }
+        .buy {
+          box-sizing: border-box;
+          width: 120px;
+          height: 35px;
+          background: #FFFFFF;
+          border: 1px solid #3373AF;
+
+          font-size: 16px;
+          text-align: center;
+          color: #3373AF;
+          cursor: pointer;
+        }
+        .buy:hover{
+          filter: brightness(90%);
+        }
+      }
+    }
+  }
+}
+
+.selected {
+  border: 2px solid #3373AF;
+}
+
+.not-found{
+  height: 80vh;
+  h2{
+    text-align: center;
+    margin-top: 35vh;
+    color: darkred;
+  }
+}

@@ -1,0 +1,34 @@
+.container{
+    margin: 60px auto;
+    width: 80%;
+    .rev-title{
+        font-size: 52px;
+        color: #3373AF;
+        margin-bottom: 35px;
+    }
+    .rev-body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 10px;
+        .rev-item{
+            margin-bottom: 25px;
+            width: 370px;
+            border-radius: 6px;
+            padding: 25px 25px;
+            box-shadow: 0px 1px 5px 0px rgba(34, 60, 80, 0.5);
+            .rev-item-up{
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                .rev-item-up-img{
+                    margin-right: 25px;
+                }
+            }
+            .rev-item-desc{
+                font-size: 11px;
+                text-indent: 15px;
+            }
+        }
+    }
+}

@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="home">
+    <a routerLink="/home">Главная</a>
+  </div>
+  <h1>aise</h1>
+  <h2>Регистрация для дальнейших заказов <br> через наш сайт</h2>
+  <div class="login">
+    <p>Создать аккаунт</p>
+    <form (ngSubmit)="onSubmit()" #registerForm="ngForm">
+      <div class="form-group1">
+        <input type="email" class="form-control" id="email" name="email" [(ngModel)]="user.username"
+               required placeholder="Логин Пользователя">
+      </div>
+      <div class="form-group2">
+        <input type="password" class="form-control" id="password" name="password" [(ngModel)]="user.password"
+               required placeholder="Пароль">
+      </div>
+      <button type="submit" class="btn btn-primary">Регистрация</button>
+    </form>
+    <a routerLink="/login">Войти</a>
+  </div>
+</div>

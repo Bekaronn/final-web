@@ -1,0 +1,38 @@
+.container{
+  margin-left:40px;
+}
+
+.list-items{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 330px;
+  height: 420px;
+  margin: 15px;
+  background: rgba(51, 115, 175, 0.19);
+}
+
+.img{
+  padding-top: 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.text{
+  margin-top: 10px;
+  width: 300px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  text-align: center;
+  letter-spacing: -0.015em;
+
+  color: #3373AF;
+}

@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container" *ngIf="load; else notFound">
+  <h1>О товаре</h1>
+  <div class="content">
+    <img src="{{photo}}" class="photo">
+    <div class="info">
+      <div class="sub-info">
+        <p class="title">{{product.name}}</p>
+        <p class="review">⭐️⭐️⭐️⭐️⭐️</p>
+        <div class="description">
+          {{product.description}}
+        </div>
+        <div class="gallery">
+          <img src={{photo}} *ngFor="let photo of gallery" (click)="setPhoto(photo)" class="photos"
+               [ngClass]="{'selected': isPhotoSelected(photo)}">
+        </div>
+      </div>
+      <div class="buttons">
+        <div class="choose">
+          <button (click)="minusCount()">-</button>
+          <p>{{count}}</p>
+          <button (click)="plusCount()">+</button>
+        </div>
+        <div class="order">
+          <p class="price">{{product.price}} ₸</p>
+          <button class="buy">В корзину</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+
+<ng-template #notFound>
+  <div class="not-found">
+    <h2>Данный товар не существует</h2>
+  </div>
+</ng-template>

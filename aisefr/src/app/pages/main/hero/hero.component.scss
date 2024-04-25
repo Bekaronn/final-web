@@ -1,0 +1,38 @@
+.box {
+  background-image: url(../../../../assets/Hero\ E.jpg);
+  width: 100vw;
+  height: 93vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  .container {
+    margin: 0 auto;
+    width: 1136px;
+    display: flex;
+    flex-direction: column;
+    .hero-title {
+      font-size: 32px;
+      color: white;
+      text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.9);
+      text-align: center;
+      margin-top: 350px;
+      letter-spacing: -1.5%;
+      line-height: 40px;
+    }
+    button {
+      margin: 40px auto 0px;
+      display: block;
+      font-size: 22px;
+      cursor: pointer;
+      color: white;
+      letter-spacing: -1.5%;
+      background-color: #3373AF;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 6px;
+      align-items: center;
+    }
+    button:hover {
+      filter: brightness(90%);
+    }
+  }
+}
